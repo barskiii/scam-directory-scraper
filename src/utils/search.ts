@@ -12,9 +12,9 @@ const getSearchPage = async (url: String) => {
     }
 
     // Searching
-    const result = await axios.get(scamDirectory, {params: {s: url}})
+    const { data } = await axios.get(scamDirectory, {params: {s: url}})
 
-    console.log(result)
+    return data
 }
 
 export { getSearchPage }
