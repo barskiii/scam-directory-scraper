@@ -1,2 +1,2 @@
 import { getSearchPage } from './utils/search'
-getSearchPage('legalweeddispensary.com')
+getSearchPage('legalweeddispensary.com') // testing
