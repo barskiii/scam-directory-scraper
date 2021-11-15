@@ -34,7 +34,7 @@ const data = await isItScam(url)
   details: {
     url: "scamwebsite.domen",
     category: "Scam category",
-    description: "Description ..."
+    description: "Description ...",
     article: "scam.directory/category/article"
   }
 }
