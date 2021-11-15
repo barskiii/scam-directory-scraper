@@ -1,5 +1,4 @@
 import axios from 'axios'
-import IsURL from 'validator/lib/isURL'
 
 //Returns raw results from `scam.directory`
 const getSearchPage = async (searchUrl: String) => {
