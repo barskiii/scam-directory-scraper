@@ -1,9 +1,13 @@
 {
   "name": "scam-directory-scraper",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Scrapper for scam.directory.",
   "main": "dist/scraper.js",
-  "keywords": ["scam", "dom", "scraper"],
+  "keywords": [
+    "scam",
+    "dom",
+    "scraper"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +15,11 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
-    "jsdom": "^18.0.1"
+    "jsdom": "^18.0.1",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
-    "@types/jsdom": "^16.2.13"
+    "@types/jsdom": "^16.2.13",
+    "@types/validator": "^13.7.0"
   }
 }

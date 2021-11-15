@@ -1,10 +1,11 @@
 import axios from 'axios'
+import IsURL from 'validator/lib/isURL'
 
 //Returns raw results from `scam.directory`
 const getSearchPage = async (searchUrl: String) => {
     // scam directory url
     const scamDirectory = 'https://scam.directory/'
-    
+
     // search format is "websitename.domen"
     const replace = ["https://", "http://", "www."]
     for (let i of replace) {

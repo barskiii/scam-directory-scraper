@@ -1,9 +1,12 @@
 import { getSearchPage } from './utils/search'
 import { JSDOM } from 'jsdom'
 import { getData } from './utils/getData'
+import validator from 'validator'
 
 // Scraping search result
-const isItScam = async (url: String) => {
+const isItScam = async (url: string) => {
+    if (!validator.isURL(url)) return false
+
     const {data, searchUrl} = await getSearchPage(url)
 
     const { window } = new JSDOM(data)
