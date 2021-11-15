@@ -14,7 +14,7 @@ const getSearchPage = async (searchUrl: String) => {
     // Searching
     const { data } = await axios.get(scamDirectory, {params: {s: searchUrl}})
 
-    return { data , searchUrl }
+    return { data , searchUrl: searchUrl.toLowerCase() }
 }
 
 export { getSearchPage }
