@@ -1,20 +1,20 @@
 import axios from 'axios'
 
 //Returns raw results from `scam.directory`
-const getSearchPage = async (url: String) => {
+const getSearchPage = async (searchUrl: String) => {
     // scam directory url
     const scamDirectory = 'https://scam.directory/'
     
     // search format is "websitename.domen"
     const replace = ["https://", "http://", "www."]
     for (let i of replace) {
-        url.replace(i, '')
+        searchUrl.replace(i, '')
     }
 
     // Searching
-    const { data } = await axios.get(scamDirectory, {params: {s: url}})
+    const { data } = await axios.get(scamDirectory, {params: {s: searchUrl}})
 
-    return data
+    return { data , searchUrl }
 }
 
 export { getSearchPage }

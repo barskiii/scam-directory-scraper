@@ -1,6 +1,6 @@
 {
   "name": "scam-directory-scraper",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Scrapper for scam.directory.",
   "main": "dist/scraper.js",
   "keywords": ["scam", "dom", "scraper"],
