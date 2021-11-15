@@ -1,7 +1,7 @@
 {
-  "name": "scraper",
+  "name": "scam-directory-scraper",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scrapper for scam.directory.",
   "main": "dist/scraper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

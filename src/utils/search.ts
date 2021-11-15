@@ -5,7 +5,7 @@ const getSearchPage = async (url: String) => {
     // scam directory url
     const scamDirectory = 'https://scam.directory/'
     
-    // search format is "ebsitename.domen"
+    // search format is "websitename.domen"
     const replace = ["https://", "http://", "www."]
     for (let i of replace) {
         url.replace(i, '')
