@@ -1,6 +1,6 @@
 {
   "name": "scam-directory-scraper",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "Scrapper for scam.directory.",
   "main": "dist/scraper.js",
   "keywords": ["scam", "dom", "scraper"],
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrija Joksimovic",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
     "jsdom": "^18.0.1"
