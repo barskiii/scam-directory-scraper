@@ -8,7 +8,7 @@ const getSearchPage = async (searchUrl: String) => {
     // search format is "websitename.domen"
     const replace = ["https://", "http://", "www."]
     for (let i of replace) {
-        searchUrl.replace(i, '')
+        searchUrl = searchUrl.replace(i, '')
     }
 
     // Searching

@@ -5,7 +5,10 @@ import validator from 'validator'
 
 // Scraping search result
 const isItScam = async (url: string) => {
-    if (!validator.isURL(url)) return false
+    if (!validator.isURL(url)) return {
+        isItScam: false,
+        details: {}
+    }
 
     const {data, searchUrl} = await getSearchPage(url)
 
